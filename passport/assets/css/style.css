@@ -377,7 +377,8 @@ a.theme-btn {
   -ms-flex-pack: center;
   justify-content: center;
   text-transform: capitalize;
-  background: var(--primary-color); }
+  background: var(--primary-color);
+}
   .theme-btn i,
   a.theme-btn i {
     -webkit-transition: 0.5s;
