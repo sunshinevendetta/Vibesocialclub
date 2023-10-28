@@ -1,27 +1,36 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Clan</title>
-<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="styles/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
-<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
-<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
-<style>
-    /* Additional CSS to ensure no scrolling and full viewport height */
-    html, body {
-        overflow: hidden;  /* Prevent scrolling */
-        height: 100%;      /* Set minimum height to full viewport */
-    }
-    #page {
-        min-height: 100vh; /* Ensure it's at least full viewport height */
-    }
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Clan</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <style>
+        /* Additional CSS to ensure no scrolling and full viewport height */
+        html, body {
+            overflow: hidden;  /* Prevent scrolling */
+            height: 100%;      /* Set minimum height to full viewport */
+        }
+        #page {
+            min-height: 100vh; /* Ensure it's at least full viewport height */
+        }
+    </style>
+    <script>
+        // This script ensures the page refreshes once per visit
+        document.addEventListener('DOMContentLoaded', (event) => {
+            if (!localStorage.getItem("alreadyRefreshed")) {
+                localStorage.setItem("alreadyRefreshed", true);
+                window.location.reload(true); // Force the page to reload from the server
+            }
+        });
+    </script>
 </head>
     
 <body class="theme-light">
@@ -58,7 +67,7 @@
                                         - Dentro del festival habrán portales ocultos en realidad aumentada que podrás explorar con tu celular, al entrar a ellos descubrirás el festival de una manera única,
                                         <br> estos portales también tendrán recompensas dentro, solo se permite un clan por cuenta, por ocasión.<br>
                                         - Al escoger tu clan se abrirá una página donde podrás ver tu perfil, medallas, clan, recompensas y eventos.
-                                        <br> <a href="/page-about.html" target="_blank">Más información sobre tu perfil aquí</a>.<br>
+                                        <br> <a href="pasaporte.html" target="_blank">Más información sobre tu perfil aquí</a>.<br>
                                         - Al crear tu cuenta también se creará una wallet digital donde podrás recibir regalos, 
                                         <br>el primero de ellos será tu propio mundo digital en <a href="https://www.oncyber.io" target="_blank">oncyber.io</a> para que puedas personalizarlo a tu gusto. 
                                         <br> <a href="https://example.com/tu-perfil" target="_blank">Más información sobre tu mundo digital aquí</a>.<br>
