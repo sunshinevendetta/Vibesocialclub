@@ -34,7 +34,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "yourname@domain.com";
+$EmailTo = "gm@vibesocial.club";
 
 $bodySubject = "New Message Received";
 

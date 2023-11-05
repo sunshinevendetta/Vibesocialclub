@@ -1,0 +1,595 @@
+.container {
+  min-width: 100%;
+  max-width: 1440px;
+  padding: 5rem 1rem;
+  min-height: 100vh;
+  max-height: 100px;
+}
+
+.gradientText0 {
+  background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText1 {
+  background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText2 {
+  background: -webkit-linear-gradient(#bfa3da, #743f93);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText3 {
+  background: -webkit-linear-gradient(#c35ab1, #e9a8d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+  text-decoration-color: #84309c;
+}
+
+.title {
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: left;
+}
+
+.connect {
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #555;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #131313;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  max-width: 440px;
+  overflow: hidden;
+  border: none;
+  border-radius: 20px;
+
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.cardText {
+  padding: 1rem;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 12px;
+  border: none;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  background-color: #272c34;
+  opacity: 80%;
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin: 0 0 0.75rem 0;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-left: 0;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+}
+
+.card,
+.footer {
+  border-color: #222;
+}
+.logo img {
+  filter: invert(1);
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  margin-top: 0px;
+  top: 0px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem;
+  background: #070707;
+  z-index: 9000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 2rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background: #070707;
+  z-index: 10000;
+}
+.navIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  cursor: pointer;
+}
+.navIconLabel {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.nftClaim {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.nftCardContent {
+  display: flex;
+  background-color: #000;
+  opacity: 850%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+.nftCardContent p {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 0.3rem;
+  font-size: 0.6rem;
+}
+
+.nftCard {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: auto;
+  background: #070707;
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+.navIconContainer {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Adjust the gap between the icon and text */
+}
+.nftButton {
+  font-size: 1rem; 
+  padding: 1rem 1rem;
+  top: 0%;
+  margin: 0rem 0;
+  width: 100%; 
+  height: 100%;
+  background: #1d1d1d; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.nftButton:hover {
+  background-color: #309c39; 
+}
+.clanButton {
+  font-size: 1rem; 
+  padding: 1rem 1rem; 
+  margin: 0rem 0;
+  position: relative;
+  top: 85%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+  width: 100%; /* Optional: if you want the text to be centered within a certain width */
+  text-align: center; /* Center align the text within its block */
+  background: #832e2e; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+.clanButton:hover {
+  background-color: #ff0000; 
+}
+.pText {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+  width: 100%; /* Optional: if you want the text to be centered within a certain width */
+  text-align: center; /* Center align the text within its block */
+}
+.buttonHome {
+  font-size: 1rem; 
+  padding: 1rem 1rem; 
+  margin: 0rem 0;
+  position: fixed;
+  top: 60%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+  width: 100%; /* Optional: if you want the text to be centered within a certain width */
+  text-align: center; /* Center align the text within its block */
+  height: 10%;
+  background: #1d1d1d; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.buttonHome:hover {
+  background-color: #a3f44d; 
+}
+.clanButtonAccess {
+  font-size: 1rem; 
+  padding: 1rem 1rem; 
+  margin: 0rem 0;
+  position: relative;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+  width: 100%; /* Optional: if you want the text to be centered within a certain width */
+  text-align: center; /* Center align the text within its block */
+  background: #1d1d1d; 
+  color: rgb(246, 54, 234); 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+.clanButtonAccess:hover {
+  background-color: #a3f44d; 
+}
+.gridContainer {
+  display: grid;
+  overflow-y: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  padding-top: -50%; /* This will make the height equal to the width */
+  position: relative; /* Needed for padding-top to work */
+}
+
+.gridContainer div {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.gridContainer div:hover {
+  transform: scale(1.02);
+  background-color: lightgreen;
+}
+
+
+.unirseButton {
+  font-size: 1rem;
+  padding: 0rem 0rem;
+  margin: 0rem 0;
+  position: absolute; /* Change position to absolute */
+  bottom: 15%; /* Position the button 20% from the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 100%; /* Adjust the width as needed */
+  background: #f642f6;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.unirseButton:hover {
+  background-color: #a4f45d;
+}
+.menu{
+  padding: 5rem 0;
+}
+
+.cardClan {
+  position: relative;
+  width: 80%; /* Adjust width */
+  height: 120px; /* Adjust height */
+  margin: 0rem; /* Add some space around the cards */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  background: transparent; /* Card background color */
+  display: flex; /* Use flex layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  transition: transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.cardClan:hover {
+  transform: translateY(-5px); /* Raise the card slightly on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
+}
+
+.cardClanImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.cardClanText {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.instructionContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+.containerInst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This centers the children vertically */
+    align-items: center; /* This centers the children horizontally */
+    padding-top: 3rem;
+    min-height: 100vh; /* This makes sure the container is at least the height of the viewport */
+    background-color: #1a1a1a; /* Background color */
+  
+  
+}
+.connectedMenu {
+  position: relative; /* Fixed position */
+  min-height: auto;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Align to bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background: transparent; /* You might want to add a background to make it visible above other elements */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the top of the menu */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.cardClan2 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: auto;
+  background: #070707;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  object-fit: cover;
+}
+
+.cardClan2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+  background-color: rgb(140, 210, 26); /* Light grey background on hover for contrast */
+}
+
+.cardClanImage2 {
+  display: flex;
+  background-color: #000;
+opacity: 850%;
+  width: 100%;
+  height: auto; /* Adjust height automatically */
+  object-fit: fill;
+}
+
+.cardClan3 {
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  overflow: auto;
+  background: #070707;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.cardClan3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+  background-color: rgb(140, 210, 26); /* Light grey background on hover for contrast */
+}
+
+.cardClanImage3 {
+  display: flex;
+  background-color: #000;
+opacity: 850%;
+  width: 1%;
+  height: 10px; /* Adjust height automatically */
+  object-fit: cover;
+}
+
+
+
+.cardClanText2 {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 0.7rem;
+  width: fit-content;
+}
+.cardClan2:hover .cardClanText2 {
+  color: #1d1d1d; /* Dark color for the text when the card is hovered */
+}
+
+.connectedMenuButton {
+  z-index: 5;
+  font-size: 1rem; 
+  padding: 1rem 1rem; 
+  margin: 5rem 0;
+  position: relative;
+  top: 60%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+  width: 100%; /* Optional: if you want the text to be centered within a certain width */
+  text-align: center; /* Center align the text within its block */
+  height: 10%;
+  background: black; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.connectedMenuButton:hover {
+  background-color: #a3f44d; 
+  color: black;
+}
+
+.connectedMenuText {
+  color: white;
+  margin: 1rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  position: relative;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+  width: 100%; /* Optional: if you want the text to be centered within a certain width */
+  text-align: center; /* Center align the text within its block */
+}
+.connectedMenuButton:hover .connectedMenuText {
+  color: black; /* This will change the text color to black on hover */
+}
+.buttonBack {
+  padding: 10px 20px;
+  background-image: linear-gradient(45deg, #5dfc6a, #94ef24);
+  border: none;
+  border-radius: 30px;
+  color: black;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  width: 100%;
+}
+  
+
+
+.buttonBack:hover {
+    background-image: linear-gradient(45deg, #78c953, #a8e245);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* Add an active/click effect */
+  .buttonBack:active {
+    background-image: linear-gradient(45deg, #448e40, #5a37b8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+
